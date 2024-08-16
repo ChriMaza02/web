@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura que la página se ajuste a la pantalla de dispositivos móviles -->
+    <title>Arquitectura del Computador</title> <!-- Título de la página -->
+
+    <!-- Estilos CSS embebidos -->
+    <style>
+        /* Estilos para el cuerpo del documento */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #4d82bc; /* Color de fondo */
+        }
+        /* Estilos para el encabezado */
+        header {
+            background-color: #333; /* Color de fondo del encabezado */
+            color: #fff; /* Color del texto del encabezado */
+            padding: 10px 0;
+            text-align: center; /* Centra el texto del encabezado */
+        }
+        /* Estilos para el texto del encabezado */
+        header h1 {
+            color: #fff;
+        }
+        /* Estilos para el contenedor principal */
+        .container {
+            width: 80%; /* Ancho del contenedor */
+            margin: auto; /* Centra el contenedor horizontalmente */
+            overflow: hidden;
+            padding: 20px;
+            background: #fff; /* Fondo blanco */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del contenedor */
+        }
+        /* Estilos para los títulos */
+        h1, h2 {
+            color: #b83232; /* Color del texto de los títulos */
+        }
+        /* Estilos para las secciones de partes del computador */
+        .part {
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        /* Estilos para los títulos de las partes */
+        .part h2 {
+            background: #333; /* Fondo del título de la parte */
+            color: #fff; /* Color del texto del título */
+            padding: 10px;
+            margin: 0 -20px 10px -20px;
+            flex: 100%;
+        }
+        /* Estilos para el contenido de las partes */
+        .part-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        /* Estilos para las columnas del contenido */
+        .part-content .column {
+            flex: 1;
+            padding: 10px;
+        }
+        /* Estilos para las imágenes del contenido */
+        .part-content .image {
+            flex: 1;
+            max-width: 300px;
+            padding: 10px;
+        }
+        /* Estilos para las imágenes */
+        .part-content .image img {
+            width: 100%; /* Ancho de la imagen */
+            height: auto;
+            border: 1px solid #ddd; /* Borde de la imagen */
+            border-radius: 8px; /* Esquinas redondeadas de la imagen */
+        }
+        /* Estilos para el menú de navegación */
+        .menu {
+            background-color: #7e1414; /* Fondo del menú */
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center; /* Centra el contenido del menú */
+            border-radius: 8px;
+        }
+        /* Estilos para los botones del menú */
+        .menu button {
+            background-color: #333; /* Fondo del botón */
+            color: #fff; /* Color del texto del botón */
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+            border-radius: 4px; /* Esquinas redondeadas del botón */
+        }
+        /* Estilos para los botones del menú al pasar el cursor sobre ellos */
+        .menu button:hover {
+            background-color: #555; /* Cambia el color de fondo del botón al pasar el cursor */
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado principal -->
+    <header>
+        <h1>Arquitectura del Computador</h1> <!-- Título principal de la página -->
+    </header>
+    <!-- Menú de navegación -->
+    <div class="menu">
+        <button onclick="location.href='#cpu'">CPU</button> <!-- Botón para navegar a la sección CPU -->
+        <button onclick="location.href='#ram'">Memoria (RAM)</button> <!-- Botón para navegar a la sección RAM -->
+        <button onclick="location.href='#hdd'">Disco Duro</button> <!-- Botón para navegar a la sección Disco Duro -->
+        <button onclick="location.href='#motherboard'">Placa Base</button> <!-- Botón para navegar a la sección Placa Base -->
+        <button onclick="location.href='#gpu'">GPU</button> <!-- Botón para navegar a la sección GPU -->
+        <button onclick="location.href='#psu'">Fuente de Alimentación</button> <!-- Botón para navegar a la sección Fuente de Alimentación -->
+        <button onclick="location.href='#peripherals'">Periféricos</button> <!-- Botón para navegar a la sección Periféricos -->
+    </div>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h1>Partes Básicas del Computador</h1> <!-- Título de la sección principal -->
+
+        <!-- Sección CPU -->
+        <div class="part" id="cpu">
+            <h2>Unidad Central de Procesamiento (CPU)</h2> <!-- Título de la sección CPU -->
+            <div class="part-content">
+                <!-- Columna de texto sobre la CPU -->
+                <div class="column">
+                    <p>La CPU, también conocida como el cerebro del computador, es responsable de ejecutar instrucciones y procesar datos. Se encarga de realizar cálculos aritméticos, lógicos y de control.</p>
+                    <p><strong>Tipos de CPU:</strong></p>
+                    <ul>
+                        <li><strong>CPU de un solo núcleo:</strong> Procesa una tarea a la vez.</li>
+                        <li><strong>CPU multinúcleo:</strong> Contiene múltiples núcleos, lo que permite realizar varias tareas simultáneamente. Ejemplos incluyen dual-core, quad-core, hexa-core, y octa-core.</li>
+                        <li><strong>CPU de 32 bits:</strong> Procesa datos en fragmentos de 32 bits.</li>
+                        <li><strong>CPU de 64 bits:</strong> Procesa datos en fragmentos de 64 bits, permitiendo manejar más memoria y ejecutar aplicaciones más avanzadas.</li>
+                    </ul>
+                </div>
+                <!-- Columna de imagen sobre la CPU -->
+                <div class="image">
+                    <img src="IMAGEN/Unidad Central de Procesamiento.png" alt="Imagen de CPU"> <!-- Imagen de la CPU -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección RAM -->
+        <div class="part" id="ram">
+            <h2>Memoria (RAM)</h2> <!-- Título de la sección RAM -->
+            <div class="part-content">
+                <!-- Columna de imagen sobre la RAM -->
+                <div class="image">
+                    <img src="IMAGEN/Memoria (RAM).png" alt="Imagen de RAM"> <!-- Imagen de la RAM -->
+                </div>
+                <!-- Columna de texto sobre la RAM -->
+                <div class="column">
+                    <p>La memoria RAM (Memoria de Acceso Aleatorio) es un tipo de almacenamiento volátil que almacena temporalmente los datos y programas que el CPU necesita mientras el computador está encendido. Permite el acceso rápido a los datos.</p>
+                    <p><strong>Tipos de RAM:</strong></p>
+                    <ul>
+                        <li><strong>DDR (Double Data Rate):</strong> DDR, DDR2, DDR3, DDR4, y DDR5 son versiones de RAM, cada una con mayor velocidad y eficiencia que la anterior.</li>
+                        <li><strong>SRAM (Static RAM):</strong> Más rápida y cara que la DRAM, usada en cachés de CPU.</li>
+                        <li><strong>DRAM (Dynamic RAM):</strong> Más común y más lenta que la SRAM, usada en la mayoría de las memorias principales.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Disco Duro -->
+        <div class="part" id="hdd">
+            <h2>Disco Duro (HDD/SSD)</h2> <!-- Título de la sección Disco Duro -->
+            <div class="part-content">
+                <!-- Columna de texto sobre el Disco Duro -->
+                <div class="column">
+                    <p>El disco duro es un dispositivo de almacenamiento permanente donde se guardan los datos y programas. Los discos duros pueden ser de tipo HDD (unidad de disco duro) o SSD (unidad de estado sólido), siendo estos últimos más rápidos y resistentes.</p>
+                    <p><strong>Tipos de discos duros:</strong></p>
+                    <ul>
+                        <li><strong>HDD (Hard Disk Drive):</strong> Utiliza platos giratorios y cabezales magnéticos para leer y escribir datos. Más económico pero más lento y frágil.</li>
+                        <li><strong>SSD (Solid State Drive):</strong> Utiliza memoria flash para almacenar datos, sin partes móviles. Es más rápido, duradero y consume menos energía.</li>
+                        <li><strong>NVMe (Non-Volatile Memory Express):</strong> Un tipo de SSD que utiliza el bus PCIe para ofrecer velocidades de transferencia aún mayores.</li>
+                    </ul>
+                </div>
+                <!-- Columna de imagen sobre el Disco Duro -->
+                <div class="image">
+                    <img src="IMAGEN/Disco Duro (HDD,SSD).png" alt="Imagen de Disco Duro"> <!-- Imagen del Disco Duro -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Placa Base -->
+        <div class="part" id="motherboard">
+            <h2>Placa Base (Motherboard)</h2> <!-- Título de la sección Placa Base -->
+            <div class="part-content">
+                <!-- Columna de imagen sobre la Placa Base -->
+                <div class="image">
+                    <img src="IMAGEN/Placa Base (Motherboard).png" alt="Imagen de Placa Base"> <!-- Imagen de la Placa Base -->
+                </div>
+                <!-- Columna de texto sobre la Placa Base -->
+                <div class="column">
+                    <p>La placa base es el componente principal que conecta todos los demás componentes del computador. Proporciona las conexiones eléctricas y de datos entre la CPU, la memoria, los dispositivos de almacenamiento y otros periféricos.</p>
+                    <p><strong>Tipos de placas base:</strong></p>
+                    <ul>
+                        <li><strong>ATX (Advanced Technology eXtended):</strong> El formato más común, ofrece más espacio para componentes y expansiones.</li>
+                        <li><strong>Micro-ATX:</strong> Más pequeña que la ATX, con menos opciones de expansión pero más compacta.</li>
+                        <li><strong>Mini-ITX:</strong> Aún más pequeña, ideal para sistemas compactos, pero con limitaciones en expansión y rendimiento térmico.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección GPU -->
+        <div class="part" id="gpu">
+            <h2>Unidad de Procesamiento Gráfico (GPU)</h2> <!-- Título de la sección GPU -->
+            <div class="part-content">
+                <!-- Columna de texto sobre la GPU -->
+                <div class="column">
+                    <p>La GPU es responsable de procesar y renderizar imágenes, videos y gráficos 3D. Es esencial para tareas que requieren procesamiento intensivo de gráficos, como juegos, diseño gráfico y edición de video.</p>
+                    <p><strong>Tipos de GPU:</strong></p>
+                    <ul>
+                        <li><strong>Integrada:</strong> Integrada en la CPU o la placa base, adecuada para tareas básicas y multimedia.</li>
+                        <li><strong>Dedicada:</strong> Una tarjeta gráfica separada con su propia memoria VRAM, utilizada para juegos y aplicaciones gráficas avanzadas.</li>
+                        <li><strong>GPU para estaciones de trabajo:</strong> Diseñadas para aplicaciones profesionales de diseño y cálculo intensivo, como la renderización 3D y la edición de video.</li>
+                    </ul>
+                </div>
+                <!-- Columna de imagen sobre la GPU -->
+                <div class="image">
+                    <img src="IMAGEN/Unidad de Procesamiento Gráfico (GPU).png" alt="Imagen de GPU"> <!-- Imagen de la GPU -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Fuente de Alimentación -->
+        <div class="part" id="psu">
+            <h2>Fuente de Alimentación</h2> <!-- Título de la sección Fuente de Alimentación -->
+            <div class="part-content">
+                <!-- Columna de imagen sobre la Fuente de Alimentación -->
+                <div class="image">
+                    <img src="IMAGEN/Fuente de Alimentación.png" alt="Imagen de Fuente de Alimentación"> <!-- Imagen de la Fuente de Alimentación -->
+                </div>
+                <!-- Columna de texto sobre la Fuente de Alimentación -->
+                <div class="column">
+                    <p>La fuente de alimentación convierte la corriente alterna (CA) de la red eléctrica en corriente continua (CC) que alimenta todos los componentes del computador. Asegura que cada componente reciba el voltaje adecuado.</p>
+                    <p><strong>Tipos de fuentes de alimentación:</strong></p>
+                    <ul>
+                        <li><strong>ATX:</strong> El estándar más común para computadoras de escritorio, ofrece varios conectores y capacidades de potencia.</li>
+                        <li><strong>SFX (Small Form Factor):</strong> Más compacta, utilizada en sistemas pequeños y mini PCs.</li>
+                        <li><strong>Modular:</strong> Permite desconectar cables innecesarios para mejorar la gestión del cableado y el flujo de aire.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Periféricos -->
+        <div class="part" id="peripherals">
+            <h2>Periféricos</h2> <!-- Título de la sección Periféricos -->
+            <div class="part-content">
+                <!-- Columna de texto sobre los Periféricos -->
+                <div class="column">
+                    <p>Los periféricos son dispositivos externos que se conectan al computador, como el teclado, el ratón, la impresora y el monitor. Permiten la interacción con el sistema y la entrada/salida de datos.</p>
+                    <p><strong>Tipos de periféricos:</strong></p>
+                    <ul>
+                        <li><strong>Entrada:</strong> Dispositivos como el teclado, ratón, escáner y micrófono que permiten introducir datos al computador.</li>
+                        <li><strong>Salida:</strong> Dispositivos como el monitor, impresora, altavoces y auriculares que permiten recibir información del computador.</li>
+                        <li><strong>Entrada/Salida:</strong> Dispositivos como las unidades USB, discos duros externos y pantallas táctiles que permiten tanto la entrada como la salida de datos.</li>
+                    </ul>
+                </div>
+                <!-- Columna de imagen sobre los Periféricos -->
+                <div class="image">
+                    <img src="IMAGEN/Periféricos.png" alt="Imagen de Periféricos"> <!-- Imagen de los Periféricos -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
